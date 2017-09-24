@@ -2,6 +2,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+ * purpose: Functioned as a app store which can list songs,
+ * list albums, add songs, add albums, list songs on an album,
+ * update song price
+ * @author Matthew Jin
+ * @version 1.0
+ */
 public class FlyTuneApp {
 
 	Scanner sc = new Scanner(System.in);

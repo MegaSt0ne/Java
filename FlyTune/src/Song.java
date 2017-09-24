@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 /**
+ * purpose: class song
  * @author Matthew Jin
  *
  */

@@ -1,5 +1,10 @@
 import java.util.ArrayList;
 
+/**
+ * purpose: class Album
+ * @author Matthew Jin
+ * @version 1.0
+ */
 public class Album {
 	
 	/*
