@@ -6,7 +6,7 @@ import java.util.Scanner;
  *
  */
 public class isPalindrome {
-	public static boolean isPalindrome(String s) {
+	public static boolean myIsPalindrome(String s) {
 		for (int i = 0; i < s.length() / 2; i++) {
 			if (s.charAt(i) != s.charAt(s.length() - 1 - i)) {
 				return false;
@@ -24,7 +24,7 @@ public class isPalindrome {
 			if (s.equals("0")) {
 				break;
 			} 
-			System.out.println(isPalindrome(s));
+			System.out.println(myIsPalindrome(s));
 		}
 	}
 
