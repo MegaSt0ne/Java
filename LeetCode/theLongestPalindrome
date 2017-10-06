@@ -1,0 +1,30 @@
+import java.util.Hashtable;
+
+class Solution {
+    public int longestPalindrome(String s) {
+    	int count = 0;
+    	ArrayList<Integer> oddList = new ArrayList<Integer>();
+        char[] sc = s.toCharArray();
+        Hashtable<Character, Integer> ht = new Hashtable<>();
+        
+        for (int i = 0; i < sc.length; i++) {
+            if (ht.containsKey(sc[i])) {
+            	ht.put(sc[i], ht.get(sc[i]) + 1);
+            } else {
+            	ht.put(sc[i], 1);
+            }
+        }
+        
+        for (Character c : ht.keySet()) {
+        	if ( ht.get(c).intValue() % 2 == 0 ) count += ht.get(c).intValue();
+        	else {
+        		count += ( ht.get(c).intValue() - 1);
+        		oddList.add(ht.get(c));
+        	}
+        }
+        
+        Collections.sort(oddList);
+        
+        return (count + ( oddList.size() == 0 ? 0 : 1));
+    }
+}
